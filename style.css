@@ -1,0 +1,175 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #212325;
+
+    padding: 0px 50px;
+    font-family: Gelasio, serif;
+    color: whitesmoke;
+
+}
+
+div#container {
+    height: 200vh;
+    max-height: 200vh;
+    overflow: hidden;
+}
+
+
+figure#chart {
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+/* HEADER */
+
+#heading {
+    font-size: 90px;
+    margin: 0px;
+    font-family: Gelasio, serif;
+}
+
+h1, h3, h4{
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+/* TOOLTIP */
+.tooltip {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.842);
+    padding: 6px 20px 6px 10px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/* DATA FILTER BY COUNTRIES */
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+button {
+    transition:all .5s ease-in-out;
+    margin: 0px 10px;
+    padding: 4px 8px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    /* font-weight: 300; */
+    font-size: 14px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: rgb(59, 59, 59);
+    border: white;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color:rgb(207, 207, 207);
+    color: rgb(36, 36, 36);
+}
+
+button:focus {
+    background:rgb(207, 207, 207);
+    color:rgb(36, 36, 36);
+}
+
+
+/* CHECKBOXES*/
+
+#checkboxes input {
+    opacity: 0.9;
+    cursor: pointer;
+    }
+
+#checkboxes {
+    position: absolute;
+    left: 1100px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+input {
+    position: absolute;
+    left: 100px;
+}
+
+/* NARRATIVE */
+p {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+ul {
+    margin: 0px;
+}
+li {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    text-align: justify;
+    margin: 0px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#flex {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+    flex: 1 3 50%;
+}
+
+/* VISUALIZATON */
+
+h2 {
+    padding-left: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+/* IMAGE */
+
+img {
+    position: absolute;
+    top: 35px;
+    right: 110px;
+}
+
+a, a:link, a:active, a:visited {
+    transition: color 0.55s ease-out; 
+    -webkit-transition: color 0.25s ease-out; 
+    -moz-transition: color 0.25s ease-out; 
+    -o-transition: color 0.25s ease-out;
+    color: rgb(114, 199, 248); 
+    text-decoration: none;
+    }
+
+a:hover {
+    color: rgb(240, 191, 240);
+}
+
+h5 {
+    margin: 0px;
+    padding-top: 10px;
+}

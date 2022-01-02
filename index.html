@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>World Suicide </title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1> death by</h1>
+                <h1 id ="heading"> Suicide.. </h1>
+            </header>
+            <div id="intro">
+                <div id="flex">
+                    <h3>Introduction</h3>
+                    <p>Suicides take place all around the world due to many factors that can affect ones mental health. It's sad that around 700 thousand people take their lives every year and many more who attempt it. <a href = "https://www.who.int/news-room/fact-sheets/detail/suicide" target="blank">WHO</a> identifies that the most common method of suicide is by hanging and firearms.<br>
+                    For this data visualiation project I want to visualize suicide rates for different countries from the year 2000–2020. </p>
+                </div>
+                <div id ="flex">
+                    <h3>Data Set</h3>
+                    <p>The data set I'll be working with is from <a href="https://apps.who.int/gho/data/view.main.MHSUICIDEv?lang=en" target="_blank"> World Health Organization.</a>. The data is about crude suicide rate for both the gender, for all the countries in the world.<b> The Crude Suicide</b> rate is based on number of people who have died by suicide per 100,000 population.
+                    It has 6 variables namely WHO region(continent), gender, years, numeric value and the high and low value. There are over 10000 unique values for these variables. The data is filtered down to 8 countries and mapped according to gender. The visualization below is known as a connected scatterplot. The circles encode the numeric value of suicide rate. the color of the circles encode gender, blue for male and pink for female. The circles are joined by a path to better understand the trend in the suicide rate over the years.
+                    </p>
+                </div>
+            </div>
+
+            <h2>Suicide rate for different countries over the years</h2>
+            
+                <div id= "buttons">
+                    <button id="Bel">Belgium</button>
+                    <button id="Jap">Japan</button>
+                    <button id="Swe">Sweden</button>
+                    <button id="Ind">India</button>
+                    <button id="Usa">USA</button>
+                    <button id="SKo">South Korea</button>
+                    <button id="Chn">China</button>
+                    <button id="Kaz">Kazakhstan</button>
+                </div>
+            <figure id="chart">
+                <div id = "checkboxes">
+                    <h4>Filter by gender</h4>
+                    <img src="./images/circles.svg" width="25">
+                    <input type="checkbox" class="gender--option" value="Female" checked> Female <br>
+                    <input type="checkbox" class="gender--option" value="Male" checked> Male <br>
+                </div>
+            </figure>
+            <div id="analysis">
+                <div>
+                    <h3>Analysis</h3>
+                    <p>There are a few major points that can be inferred through the visualization above. </p>
+                    <ul>
+                        <li>Suicide rates are higher in men than women in all the countries above.</li>
+                        <li>In countries other than USA and South Korea, there is a downward trend in the suicide rates. This could be due to normalizing mental health and starting a converstation around depression in the recent years.</li>
+                        <li>South Korea has the highest suicide rate in 2020 for both the gender. As per <a href ="https://worldpopulationreview.com/country-rankings/suicide-rate-by-country">World Population Review</a>, one of the factor could be due to higher suicides among the elderly. The reason being feeling like a financial burden in their children's lives who tradionally are expected to care for them. The other factor being academic pressure amongst the youth. </li>
+                        <li>Kazakhstan had the highest number of suicides starting from 2000 but has seen over 55% drop in the rate.</li>
+                    </ul>
+                    <p><i>Help is available... National Suicide Prevention Lifeline: 800-273-8255</i></p>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
